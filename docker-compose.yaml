@@ -1,0 +1,22 @@
+---
+version: "2.1"
+
+services:
+  sssc:
+    build: .
+    image: sssc:local
+    expose:
+      - 7200
+    container_name: sssc
+    networks:
+      - default
+      - web
+    labels:
+      - "traefik.docker.network=web"
+      - "traefik.port=7200"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.rule=Host:solidstatesocialclub.com"
+      - "traefik.basic.protocol=http"
+networks:
+  web:
+    external: true
