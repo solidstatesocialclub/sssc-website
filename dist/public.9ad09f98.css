@@ -1,0 +1,89 @@
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  background-color: #171717;
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+h1 {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+header,
+footer {
+  grid-column: 1 / span 5;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+.timeline-period {
+  grid-column: 1 / 1;
+  padding: 20px
+}
+
+.timeline-entry {
+  grid-column: 2 / 4;
+  background: #f6f6f6;
+  padding: 20px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: linear-gradient(#eaeaea 90%, #171717 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main,
+roadmap {
+  grid-column: 1 / span 5;
+  background: #eaeaea;
+  padding: 2em;
+}
+
+roadmap {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+}
+
+header,
+main,
+time,
+footer {
+  height: auto;
+}
+
+
+
+/*# sourceMappingURL=/public.9ad09f98.css.map */
